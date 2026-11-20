@@ -28,7 +28,7 @@ if (isset($_POST['calcular'])) {
 $txt = $_POST['a'];
 $fecha= $_POST['b'];
 
-
+echo clave($txt, $fecha);
 
 
 

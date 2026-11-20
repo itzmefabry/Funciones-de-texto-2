@@ -1,6 +1,7 @@
 <?php
 
 function clave($name, $fecha) {
+    $xd=" ";
     $tres=substr($name,0,3);
     $may=strtoupper($tres);
 
@@ -8,8 +9,8 @@ function clave($name, $fecha) {
     $mes=substr($fecha,5,2);
     $dia=substr($fecha,8,2);
 
-
-    return $may, $año, $mes, $dia;
+    $xd=$may.$año.$mes.$dia;
+    return $xd;
 }
 
 
