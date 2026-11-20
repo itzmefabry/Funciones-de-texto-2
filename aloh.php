@@ -19,7 +19,13 @@ Fecha de nacimiento (formato AAAA-MM-DD): <input type="text" name="b" id="b" sty
 <br>
 <br>
 <button type="submit" name="calcular">Calcular</button>
+<br>
+<br>
 
+NOmbre: <input type="text" name="c" id="c" style="width: 300px" required>
+Institucion: <input type="text" name="d" id="d" style="width: 300px" required>
+Año: <input type="text" name="e" id="e" style="width: 300px" required>
+<button type="submit" name="calcular2">Calcular</button>
 </form>
 
 
@@ -33,7 +39,25 @@ echo clave($txt, $fecha);
 
 
 }
+
+
+if (isset($_POST['calcular2'])) {
+$txt = $_POST['c'];
+$inst= $_POST['d'];
+$fecha= $_POST['e'];
+
+echo Usuario($txt, $inst, $fecha);
+
+
+
+}
+
+
+
 ?>
+
+
+
 </body>
 </html>
 
